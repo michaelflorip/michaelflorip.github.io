@@ -63,16 +63,22 @@
     justify-content: center;
     width: 52px;
     height: 52px;
-    font-size: 20px;
     background-color: #fff;
-    color: #000;
     border-radius: 50%;
     text-decoration: none;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
+  }
+
+  .icon-buttons a img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
   }
   
   .icon-buttons a:hover {
     transform: scale(1.1);
+    background-color: #f0f0f0;
   }
   
   .icon-buttons a[href*="linkedin.com"]:hover {
@@ -100,9 +106,9 @@
     color: #81cfff;
   }
   
+  /* Dark mode styling */
   body.dark .icon-buttons a {
     background-color: #eee;
-    color: #111;
   }
   
   body.dark .icon-buttons a:hover {
@@ -128,5 +134,15 @@
     .container {
       padding: 0 16px;
     }
+  }
+  .theme-toggle {
+    position: fixed;           /* changed from absolute to fixed */
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 1000;
   }
   
