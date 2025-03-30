@@ -347,7 +347,7 @@
     height: 48px;
     font-size: 20px;
     text-decoration: none;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
   }
   
   .icon-buttons a:hover {
@@ -362,4 +362,19 @@
   body.dark .icon-buttons a:hover {
     background-color: #ccc;
   }
+  /* Icon-specific hover colors */
+.icon-buttons a[href*="linkedin.com"]:hover {
+    background-color: #0077b5;
+    color: white;
+  }
   
+  .icon-buttons a[href^="mailto"]:hover {
+    background-color: #ea4335; /* Gmail red */
+    color: white;
+  }
+  
+  .icon-buttons a[href*="github.com"]:hover {
+    background-color: #333;
+    color: #f5f5f5;
+    transform: scale(1.15);
+  }
