@@ -167,17 +167,17 @@
     .profile-image {
         display: flex;
         justify-content: center;
-        margin-bottom: clamp(32px, 6vh, 60px);
-      }
+        margin-bottom: 24px;
+    }
   
     .profile-image img {
-        max-width: 320px;        /* limits image size */
-        width: 100%;             /* responsive */
+        max-width: 240px;
+        width: 100%;
         height: auto;
         border-radius: 12px;
-        margin: 24px auto 16px;  /* space above and below */
         display: block;
-      }      
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }   
   
     .profile-text h1 {
       font-size: 28px;
