@@ -188,4 +188,70 @@
       font-size: 15px;
     }
   }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+  }
+  
+  thead {
+    background-color: #f0f0f0;
+  }
+  
+  th, td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+  
+  th {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+  }
+  
+  th::after {
+    content: ' ⇅';
+    font-size: 12px;
+    opacity: 0.4;
+    margin-left: 5px;
+  }
+  
+  th.th-sort-asc::after {
+    content: ' ↑';
+    opacity: 0.8;
+  }
+  
+  th.th-sort-desc::after {
+    content: ' ↓';
+    opacity: 0.8;
+  }
+  
+  .tag {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  
+  .slides {
+    background-color: #f3d9d9;
+    color: #963737;
+  }
+  
+  .other {
+    background-color: #f6eac2;
+    color: #856404;
+  }
+  
+  .howto {
+    background-color: #e8d4e9;
+    color: #722f37;
+  }
   
