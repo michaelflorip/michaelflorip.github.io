@@ -344,16 +344,16 @@
     background-color: #333;
     color: white;
     border-radius: 50%;
-    width: 56px;
-    height: 56px;
-    font-size: 26px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
     text-decoration: none;
     transition: transform 0.3s ease, background-color 0.3s ease;
   }
   
   /* Hover color overrides (can keep brand ones if you added earlier) */
   .icon-buttons a:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
   }
   
   /* Dark mode overrides */
