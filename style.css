@@ -289,4 +289,41 @@
     border-radius: 999px;
     font-size: 12px;
   }
-    
+  body.dark .table-wrapper table {
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+  }
+  
+  body.dark .table-wrapper th {
+    background-color: #2a2a2a;
+    color: #ffffff;
+  }
+  
+  body.dark .table-wrapper td {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+  }
+  
+  body.dark .table-wrapper tr:nth-child(even) {
+    background-color: #2a2a2a;
+  }
+  
+  body.dark .table-wrapper a {
+    color: #81cfff;
+  }
+  
+  body.dark .tag.slides {
+    background-color: #4c2b2b;
+    color: #f7caca;
+  }
+  
+  body.dark .tag.other {
+    background-color: #4b3e1d;
+    color: #f0e0b8;
+  }
+  
+  body.dark .tag.howto {
+    background-color: #51374f;
+    color: #f2d7f7;
+  }
+  
