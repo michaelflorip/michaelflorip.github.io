@@ -254,4 +254,39 @@
     background-color: #e8d4e9;
     color: #722f37;
   }
+  .table-wrapper {
+    margin-top: 12px;
+    overflow-x: auto;
+  }
   
+  .table-wrapper table {
+    font-size: 14px;
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 600px;
+  }
+  
+  .table-wrapper th,
+  .table-wrapper td {
+    padding: 8px 12px;
+  }
+  
+  .table-wrapper th {
+    background-color: #f3f3f3;
+    font-weight: 600;
+  }
+  
+  .table-wrapper tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+  
+  .table-wrapper a {
+    font-weight: 500;
+  }
+  
+  .table-wrapper .tag {
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+  }
+    
