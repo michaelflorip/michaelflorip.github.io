@@ -6,83 +6,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Michael Florip</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .profile-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .profile-text {
+      flex: 1;
+    }
+
+    .profile-text h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .profile-text p {
+      margin-bottom: 12px;
+      font-size: 17px;
+    }
+
+    .profile-image img {
+      max-width: 240px;
+      border-radius: 10px;
+    }
+
+    .contact-buttons a {
+      display: block;
+      background-color: #f1f1f1;
+      padding: 12px 16px;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #333;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+
+    .resources {
+      margin-top: 40px;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+    }
+
+    .resources h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+
+    details {
+      margin-bottom: 12px;
+    }
+
+    summary {
+      font-weight: 600;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="container">
-      <h1 class="logo">Michael Florip</h1>
-      <ul class="nav-links">
-        <button id="theme-toggle" class="theme-toggle">🌙</button>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="blog/index.html">Blog</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div class="container">
+    <section class="profile-section">
+      <div class="profile-text">
+        <h1>Michael Florip</h1>
+        <p>👋 Hi! I’m Michael, an undergraduate student at 🐻 UC Berkeley studying 📊 Data Science.</p>
+        <p>📈 I’m passionate about <strong>collaborating</strong> with people with unique skillsets from diverse backgrounds, especially on data-driven projects aimed at solving <strong>real-world</strong> challenges.</p>
+        <p>😊 Feel free to reach out if you’d like to chat!</p>
 
-  <section id="hero" class="section hero">
-    <div class="container">
-        <h2>Hello, I'm Michael Florip 🚀</h2>
-      <p>I solve problems using data and build tools for people.</p>
-    </div>
-  </section>
+        <div class="contact-buttons">
+          <a href="https://linkedin.com/in/michaelflorip" target="_blank">🔗 linkedin.com/in/michaelflorip</a>
+          <a href="mailto:michaelflorip@berkeley.edu">📧 michaelflorip [at] berkeley [dot] edu</a>
+        </div>
+      </div>
+      <div class="profile-image">
+        <img src="/assets/profile.jpg" alt="Michael Florip">
+      </div>
+    </section>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I'm a data scientist passionate about building socially responsible technology. Currently at Harvard studying Computer Science & Environmental Studies.</p>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>LLM Trip Planner</strong> — Personalized travel with large language models.</li>
-        <li><strong>Datathon for Social Good</strong> — Annual data science event supporting nonprofits.</li>
-        <li><strong>Self-Care Study</strong> — Thematic analysis of wellness in higher ed.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="resume" class="section">
-    <div class="container">
-      <h2>Resume</h2>
-      <p><a href="resume.pdf" target="_blank">Download PDF</a></p>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:michael@example.com">michael@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/michaelflorip" target="_blank">@michaelflorip</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/michaelflorip" target="_blank">linkedin.com/in/michaelflorip</a></p>
-    </div>
-  </section>
-
-  <script>
-    const toggle = document.getElementById('theme-toggle');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const storedTheme = localStorage.getItem('theme');
-  
-    if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
-      document.body.classList.add('dark');
-      toggle.textContent = '☀️';
-    }
-  
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-      const isDark = document.body.classList.contains('dark');
-      toggle.textContent = isDark ? '☀️' : '🌙';
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    });
-  </script>
-  
-
+    <section class="resources">
+      <h2>📚 Resources</h2>
+      <details>
+        <summary>🚀 Looking for a Job?</summary>
+        <p>Resources for resumes, cover letters, networking, and more.</p>
+      </details>
+      <details>
+        <summary>📘 Data 8 Student Materials (Spring 2025)</summary>
+        <p>Lecture slides, notes, and links to labs and homework.</p>
+      </details>
+    </section>
+  </div>
 </body>
 
 </html>
