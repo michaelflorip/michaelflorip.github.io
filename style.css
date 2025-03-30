@@ -164,15 +164,20 @@
       flex-direction: column;
       align-items: flex-start;
     }
+    .profile-image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: clamp(32px, 6vh, 60px);
+      }
   
     .profile-image img {
-        max-width: 260px;
-        width: 100%;
+        max-width: 320px;        /* limits image size */
+        width: 100%;             /* responsive */
         height: auto;
-        border-radius: 10px;
+        border-radius: 12px;
+        margin: 24px auto 16px;  /* space above and below */
         display: block;
-        margin: 0 auto;
-      }
+      }      
   
     .profile-text h1 {
       font-size: 28px;
@@ -318,7 +323,8 @@
     justify-content: center;
     align-items: center;
     gap: 24px;
-    margin-top: 20px;
+    margin-top: 12px;
+    margin-bottom: clamp(40px, 8vh, 80px); /* adds bottom spacing */
   }
   
   .icon-buttons a {
