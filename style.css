@@ -329,3 +329,37 @@
   body.dark .table-wrapper tr:hover td {
     background-color: rgba(255, 255, 255, 0.05);
   }
+  .icon-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 32px;
+  }
+  
+  .icon-buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .icon-buttons a:hover {
+    background-color: #555;
+    transform: scale(1.15);
+  }
+  body.dark .icon-buttons a {
+    background-color: #eee;
+    color: #111;
+  }
+  
+  body.dark .icon-buttons a:hover {
+    background-color: #ccc;
+  }
+  
