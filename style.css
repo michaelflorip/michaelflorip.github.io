@@ -145,4 +145,48 @@
     cursor: pointer;
     z-index: 1000;
   }
+
+  .table-wrapper table {
+    font-size: 16px; /* Slightly larger for readability */
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 600px;
+  }
+  
+  .table-wrapper th {
+    font-size: 18px; /* Increased to give subtitle-like weight */
+    font-weight: 600;
+    padding: 12px 16px; /* Slightly more breathing room */
+    text-align: left;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .table-wrapper th::after {
+    content: ' ⇅';
+    font-size: 12px;
+    opacity: 0.4;
+    margin-left: 6px;
+  }
+  
+  .table-wrapper th.th-sort-asc::after {
+    content: ' ↑';
+    opacity: 0.8;
+  }
+  
+  .table-wrapper th.th-sort-desc::after {
+    content: ' ↓';
+    opacity: 0.8;
+  }
+  
+  .table-wrapper td {
+    font-size: 16px;
+    padding: 12px 16px;
+    text-align: left;
+  }
+  
+  .table-wrapper tr:hover td {
+    background-color: rgba(255, 255, 255, 0.03);
+  }
   
