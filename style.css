@@ -155,3 +155,37 @@
     color: #81cfff;
   }
   
+  @media (max-width: 768px) {
+    .profile-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .profile-image img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .profile-text h1 {
+      font-size: 28px;
+    }
+  
+    .profile-text p {
+      font-size: 16px;
+    }
+  
+    .container {
+      padding: 24px 16px;
+    }
+  
+    .theme-toggle {
+      top: 12px;
+      right: 12px;
+      font-size: 20px;
+    }
+  
+    details p {
+      font-size: 15px;
+    }
+  }
+  
