@@ -107,28 +107,9 @@
   </style>
 </head>
 
-<script>
-    const toggle = document.getElementById('theme-toggle');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const storedTheme = localStorage.getItem('theme');
-  
-    if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
-      document.body.classList.add('dark');
-      toggle.textContent = '☀️';
-    }
-  
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-      const isDark = document.body.classList.contains('dark');
-      toggle.textContent = isDark ? '☀️' : '🌙';
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    });
-  </script>
-  
-
 <body>
-  <div class="container">
     <button id="theme-toggle" class="theme-toggle">🌙</button>
+  <div class="container">
     <section class="profile-section">
       <div class="profile-text">
         <h1>Michael Florip</h1>
@@ -158,6 +139,25 @@
       </details>
     </section>
   </div>
+  
 </body>
+
+<script>
+    const toggle = document.getElementById('theme-toggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const storedTheme = localStorage.getItem('theme');
+  
+    if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+      document.body.classList.add('dark');
+      toggle.textContent = '☀️';
+    }
+  
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      const isDark = document.body.classList.contains('dark');
+      toggle.textContent = isDark ? '☀️' : '🌙';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  </script>
 
 </html>
