@@ -1,1 +1,88 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michael Florip</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">Michael Florip</h1>
+      <ul class="nav-links">
+        <button id="theme-toggle" class="theme-toggle">🌙</button>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="hero" class="section hero">
+    <div class="container">
+      <h2>Hi, I'm Michael 👋</h2>
+      <p>I solve problems using data and build tools for people.</p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a data scientist passionate about building socially responsible technology. Currently at Harvard studying Computer Science & Environmental Studies.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>LLM Trip Planner</strong> — Personalized travel with large language models.</li>
+        <li><strong>Datathon for Social Good</strong> — Annual data science event supporting nonprofits.</li>
+        <li><strong>Self-Care Study</strong> — Thematic analysis of wellness in higher ed.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="resume" class="section">
+    <div class="container">
+      <h2>Resume</h2>
+      <p><a href="resume.pdf" target="_blank">Download PDF</a></p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:michael@example.com">michael@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/michaelflorip" target="_blank">@michaelflorip</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/michaelflorip" target="_blank">linkedin.com/in/michaelflorip</a></p>
+    </div>
+  </section>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const storedTheme = localStorage.getItem('theme');
+  
+    if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+      document.body.classList.add('dark');
+      toggle.textContent = '☀️';
+    }
+  
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      const isDark = document.body.classList.contains('dark');
+      toggle.textContent = isDark ? '☀️' : '🌙';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  </script>
+  
+
+</body>
+
+</html>
