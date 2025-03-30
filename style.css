@@ -26,7 +26,7 @@
   
   /* Container for max-width content */
   .container {
-    padding-top: 120px; /* try 120px, adjust as needed */
+    padding-top: clamp(80px, 12vh, 140px);
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
