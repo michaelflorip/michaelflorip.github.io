@@ -37,7 +37,7 @@ const sectionVariants = {
     y: 0,
     transition: {
       duration: 0.5,
-      ease: "easeOut",
+      ease: "easeOut" as const,
       delay: 0.15,
       staggerChildren: 0.08,
       delayChildren: 0.25,
@@ -47,7 +47,7 @@ const sectionVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 14 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" as const } },
 };
 
 export function Work() {

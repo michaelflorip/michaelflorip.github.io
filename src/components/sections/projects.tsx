@@ -26,12 +26,12 @@ const PROJECTS = [
 
 const cardVariants = {
   rest: { scale: 1 },
-  hover: { scale: 1.02, transition: { duration: 0.2, ease: "easeOut" } },
+  hover: { scale: 1.02, transition: { duration: 0.2, ease: "easeOut" as const } },
 };
 
 const arrowVariants = {
   rest: { x: -6, opacity: 0 },
-  hover: { x: 0, opacity: 1, transition: { duration: 0.2, ease: "easeOut" } },
+  hover: { x: 0, opacity: 1, transition: { duration: 0.2, ease: "easeOut" as const } },
 };
 
 export function Projects() {
