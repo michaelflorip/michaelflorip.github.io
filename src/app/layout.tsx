@@ -6,6 +6,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Michael Florip",
   description: "Personal portfolio of Michael Florip",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

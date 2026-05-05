@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <style>
+    .mark { fill: #000; font: 800 44px/1 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    @media (prefers-color-scheme: dark) { .mark { fill: #fff; } }
+  </style>
+  <rect width="64" height="64" fill="none" />
+  <text x="50%" y="53%" text-anchor="middle" dominant-baseline="middle" class="mark">M</text>
+</svg>
+

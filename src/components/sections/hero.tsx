@@ -25,16 +25,18 @@ function Status() {
 export function Hero() {
   return (
     <motion.section
-      className="space-y-4"
+      className="space-y-4 pt-2"
       variants={fadeUp}
       initial="hidden"
       animate="visible"
     >
       <Status />
-      <h1 className="text-2xl font-semibold tracking-tight">Michael Florip</h1>
       <div className="space-y-3 text-[15px] leading-relaxed text-muted-foreground">
+        <p className="font-medium text-foreground/90">
+          I am interested in how organizations use data to scale human opportunity.
+        </p>
         <p>
-          I am interested in how organizations use data to scale human opportunity. I currently
+        I currently
           work at{" "}
           <Link
             href="https://joinhandshake.com/blog/our-team/introducing-handshake-ai/"
@@ -43,10 +45,7 @@ export function Hero() {
           >
             Handshake AI
           </Link>{" "}
-          as a Strategic Projects Associate.
-        </p>
-        <p>
-          I am a{" "}
+          as a Strategic Projects Associate. I am a{" "}
           <Link
             href="https://berkeley.edu"
             target="_blank"
@@ -54,7 +53,10 @@ export function Hero() {
           >
             UC Berkeley
           </Link>
-          {" "}graduate with a background in data science and AI engineering. During my time at Berkeley, I led{" "}
+          {" "}graduate with a background in data science and AI engineering.
+        </p>
+        <p>
+        During my time at Berkeley, I led{" "}
           <Link
             href="https://www.dssberkeley.org/"
             target="_blank"
@@ -70,10 +72,7 @@ export function Hero() {
           >
             DATA C8: Foundations of Data Science
           </Link>
-          .
-        </p>
-        <p>
-          I previously worked at{" "}
+          . I also previously worked at{" "}
           <Link
             href="https://tesla.com"
             target="_blank"
