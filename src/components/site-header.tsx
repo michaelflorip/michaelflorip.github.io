@@ -18,11 +18,14 @@ function LinkedInIcon({ className }: { className?: string }) {
 export function Header() {
   return (
     <header className="flex items-center justify-between">
-      <Link href="/" className="text-sm font-medium text-foreground">
+      <Link
+        href="/"
+        className="font-serif text-lg font-semibold tracking-[-0.01em] text-foreground"
+      >
         Michael Florip
       </Link>
 
-      <nav className="flex items-center gap-4 text-sm">
+      <nav className="flex items-center gap-4 text-sm font-sans">
         <Link
           href="/writing"
           className="text-muted-foreground transition-colors hover:text-foreground"
