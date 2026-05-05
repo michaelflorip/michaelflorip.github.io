@@ -34,11 +34,19 @@ export function Hero() {
       <h1 className="text-2xl font-semibold tracking-tight">Michael Florip</h1>
       <div className="space-y-3 text-[15px] leading-relaxed text-muted-foreground">
         <p>
-          Based in the Bay Area. I spend most of my time building products,
-          writing code, and exploring what&apos;s next in technology.
+          I am interested in how organizations use data to scale human opportunity. I currently
+          work at{" "}
+          <Link
+            href="https://joinhandshake.com/blog/our-team/introducing-handshake-ai/"
+            target="_blank"
+            className="text-foreground underline decoration-muted-foreground/40 underline-offset-[3px] transition-colors hover:decoration-foreground"
+          >
+            Handshake AI
+          </Link>{" "}
+          as a Strategic Projects Associate.
         </p>
         <p>
-          I studied at{" "}
+          I am a{" "}
           <Link
             href="https://berkeley.edu"
             target="_blank"
@@ -46,27 +54,34 @@ export function Hero() {
           >
             UC Berkeley
           </Link>
-          , where I developed a deep interest in engineering and
-          entrepreneurship.
+          {" "}graduate with a background in data science and AI engineering. During my time at Berkeley, I led{" "}
+          <Link
+            href="https://www.dssberkeley.org/"
+            target="_blank"
+            className="text-foreground underline decoration-muted-foreground/40 underline-offset-[3px] transition-colors hover:decoration-foreground"
+          >
+            Data Science Society at Berkeley
+          </Link>
+          {" "}and taught{" "}
+          <Link
+            href="https://data8.org/sp25/"
+            target="_blank"
+            className="text-foreground underline decoration-muted-foreground/40 underline-offset-[3px] transition-colors hover:decoration-foreground"
+          >
+            DATA C8: Foundations of Data Science
+          </Link>
+          .
         </p>
         <p>
-          Previously, I worked at{" "}
+          I previously worked at{" "}
           <Link
             href="https://tesla.com"
             target="_blank"
             className="text-foreground underline decoration-muted-foreground/40 underline-offset-[3px] transition-colors hover:decoration-foreground"
           >
             Tesla
-          </Link>{" "}
-          and{" "}
-          <Link
-            href="https://joinhandshake.com"
-            target="_blank"
-            className="text-foreground underline decoration-muted-foreground/40 underline-offset-[3px] transition-colors hover:decoration-foreground"
-          >
-            Handshake
           </Link>
-          . I care about building things that are useful, well-crafted, and
+          {" "}focusing on systems reliability. I care about building things that are useful, well-crafted, and
           simple.
         </p>
       </div>

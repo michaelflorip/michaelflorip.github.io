@@ -11,22 +11,63 @@ type WorkEntry =
 
 const WORK_HISTORY: WorkEntry[] = [
   {
+    type: "single",
+    company: "Handshake AI",
+    role: "Strategic Projects Associate",
+    period: "2026 - Present",
+    logo: "/logos/joinhandshake.svg",
+    url: "https://joinhandshake.com/blog/our-team/introducing-handshake-ai/",
+  },
+  {
+    type: "single",
+    company: "Tesla",
+    role: "Data Science",
+    period: "2025",
+    logo: "/logos/tesla.svg",
+    url: "https://tesla.com",
+  },
+  /*
+  {
     type: "multi",
     company: "Handshake",
     logo: "/logos/handshake.svg",
     url: "https://joinhandshake.com",
     roles: [
       { title: "Strategic Projects Associate", period: "2026 – Present" },
-      { title: "Software Engineer Intern", period: "2022 – 2023" },
     ],
+  },
+  */
+  {
+    type: "single",
+    company: "Databricks",
+    role: "Engineering, AI",
+    period: "2025",
+    logo: "/logos/databricks.svg",
+    url: "https://databricks.com",
   },
   {
     type: "single",
-    company: "Tesla",
-    role: "Software Engineer Intern",
-    period: "Summer 2024",
-    logo: "/logos/tesla.svg",
-    url: "https://tesla.com",
+    company: "West Monroe",
+    role: "Data Science",
+    period: "2024, 2025",
+    logo: "/logos/westmonroe3.jpeg",
+    url: "https://westmonroe.com",
+  },
+  {
+    type: "single",
+    company: "Honda Research Institute, USA",
+    role: "Engineering, AI",
+    period: "2024",
+    logo: "/logos/hri.png",
+    url: "https://usa.honda-ri.com/",
+  },
+  {
+    type: "single",
+    company: "Arm",
+    role: "Strategy",
+    period: "2023",
+    logo: "/logos/arm_new.jpg",
+    url: "https://arm.com/",
   },
 ];
 
@@ -69,12 +110,12 @@ export function Work() {
                 rel="noopener noreferrer"
                 className="group flex items-center gap-4 rounded-lg px-2 py-2 -mx-2 transition-colors hover:bg-muted/60"
               >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md border bg-white">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center">
                   <Image
                     src={item.logo}
                     alt={`${item.company} logo`}
-                    width={22}
-                    height={22}
+                    width={32}
+                    height={32}
                     className="object-contain"
                   />
                 </div>
@@ -99,12 +140,12 @@ export function Work() {
                 rel="noopener noreferrer"
                 className="group flex items-start gap-4 rounded-lg px-2 py-2 -mx-2 transition-colors hover:bg-muted/60"
               >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md border bg-white mt-0.5">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center mt-0.5">
                   <Image
                     src={item.logo}
                     alt={`${item.company} logo`}
-                    width={22}
-                    height={22}
+                    width={32}
+                    height={32}
                     className="object-contain"
                   />
                 </div>

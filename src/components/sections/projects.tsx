@@ -7,7 +7,13 @@ const PROJECTS = [
   {
     title: "Rolodex",
     description:
-      "A modern contact manager for keeping track of your professional network.",
+      "A dynamic contact manager for monitoring the health of your professional network.",
+    url: "https://myrolodex.vercel.app/",
+  },
+  {
+    title: "ZetaLog",
+    description:
+      "Track your scores for the popular mental math game, Zetamac.",
     url: "#",
   },
   {
