@@ -3,6 +3,13 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
+// Draft copy kept in-file (not rendered). Paste back into JSX when you want it live again.
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const _HERO_DRAFT_HANDSHAKE_BLURB = `
+I currently work at Handshake AI (https://joinhandshake.com/blog/our-team/introducing-handshake-ai/)
+as a Strategic Projects Associate.
+`.trim();
+
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" as const } },
@@ -36,16 +43,7 @@ export function Hero() {
           I am interested in how organizations use data to scale human opportunity.
         </p>
         <p>
-        I currently
-          work at{" "}
-          <Link
-            href="https://joinhandshake.com/blog/our-team/introducing-handshake-ai/"
-            target="_blank"
-            className="text-foreground underline decoration-muted-foreground/40 underline-offset-[3px] transition-colors hover:decoration-foreground"
-          >
-            Handshake AI
-          </Link>{" "}
-          as a Strategic Projects Associate. I am a{" "}
+          I am a{" "}
           <Link
             href="https://berkeley.edu"
             target="_blank"
@@ -56,7 +54,7 @@ export function Hero() {
           {" "}graduate with a background in data science and AI engineering.
         </p>
         <p>
-        During my time at Berkeley, I led{" "}
+          During my time at Berkeley, I led{" "}
           <Link
             href="https://www.dssberkeley.org/"
             target="_blank"
