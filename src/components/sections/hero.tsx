@@ -15,6 +15,8 @@ const fadeUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" as const } },
 };
 
+// Draft UI kept in-file (not rendered). Uncomment `<Status />` in `Hero` to bring it back.
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function Status() {
   return (
     <div className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1">
@@ -32,12 +34,11 @@ function Status() {
 export function Hero() {
   return (
     <motion.section
-      className="space-y-4 pt-2"
+      className="space-y-4"
       variants={fadeUp}
       initial="hidden"
       animate="visible"
     >
-      <Status />
       <div className="space-y-3 text-[15px] leading-relaxed text-muted-foreground">
         <p className="font-medium text-foreground/90">
           I am interested in how organizations use data to scale human opportunity.

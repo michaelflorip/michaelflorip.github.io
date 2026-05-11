@@ -10,6 +10,7 @@ type WorkEntry =
   | { type: "multi"; company: string; roles: Role[]; logo: string; url: string };
 
 const WORK_HISTORY: WorkEntry[] = [
+  /*
   {
     type: "single",
     company: "Handshake AI",
@@ -18,6 +19,7 @@ const WORK_HISTORY: WorkEntry[] = [
     logo: "/logos/joinhandshake.svg",
     url: "https://joinhandshake.com/blog/our-team/introducing-handshake-ai/",
   },
+  */
   {
     type: "single",
     company: "Tesla",
