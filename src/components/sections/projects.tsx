@@ -11,11 +11,12 @@ const PROJECTS = [
     url: "https://myrolodex.vercel.app/",
   },
   {
-    title: "ZetaLog",
+    title: "Zetavant",
     description:
-      "Track your scores for the popular mental math game, Zetamac.",
-    url: "#",
+      "Master mental math through deep-dive analytics and competitive performance tracking.",
+    url: "https://zetavant.com/",
   },
+  /*
   {
     title: "Univocity",
     description:
@@ -28,6 +29,7 @@ const PROJECTS = [
       "Fintech platform simplifying billing and invoicing for small businesses.",
     url: "#",
   },
+  */
 ] as const;
 
 const cardVariants = {
